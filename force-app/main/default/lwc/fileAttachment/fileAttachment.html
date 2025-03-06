@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Files" icon-name="standard:file">
+        <div class="slds-m-around_medium">
+            <template if:true={showUploadButton}>
+                <lightning-file-upload
+                    label="Upload Files"
+                    record-id={recordId}
+                    onuploadfinished={handleUploadFinished}>
+                </lightning-file-upload>
+            </template>
+            <lightning-datatable
+                data={files}
+                columns={columns}
+                key-field="Id"
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <template if:true={isVisible}>
+        <lightning-card title="Upload Files">
+            <lightning-file-upload
+                label="Attach files"
+                record-id={recordId}
+                multiple>
+            </lightning-file-upload>
+        </lightning-card>
+    </template>
+</template>
