@@ -64,21 +64,21 @@
 - - Status is New
     - Priority is High
     - Allow_Upload_\_c is true
-
+```json
 {
 
-"OR": \[
+"OR": [
 
 { "Status": "New" },
 
 { "Priority": "High" },
 
-{ "Allow_Upload_\_c": "true" }
+{ "Allow_Upload__c": "true" }
 
-\]
+]
 
 }
-
+```
 
 [Back](#Contents)
 
@@ -86,28 +86,29 @@
 
 - - Status is New
     - Priority is High OR Allow_Upload_\_c is true
-
+```json
 {
 
-"AND": \[
+"AND": [
 
 { "Status": "New" },
 
 {
 
-"OR": \[
+"OR": [
 
 { "Priority": "High" },
 
-{ "Allow_Upload_\_c": "true" }
+{ "Allow_Upload__c": "true" }
 
-\]
-
-}
-
-\]
+]
 
 }
+
+]
+
+}
+```
 
 [Back](#Contents)
 
