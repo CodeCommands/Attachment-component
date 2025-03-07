@@ -1,4 +1,5 @@
 # On both component, "Upload Files" button will hide based on Filter criteria set on Component properties.
+## Very useful on Experience site where out of the box Dynamic visbility is lacking.
 
 
 ## Attachment Component:
