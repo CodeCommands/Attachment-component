@@ -22,17 +22,17 @@
 
 Contents
 
-[Summary of JSON Examples for Component Visibility Based on Field’s Value](#Summary-of-JSON-Examples-for-Component-Visibility-Based-on-Field’s-Value)
+[Summary of JSON Examples for Component Visibility Based on Field’s Value](#summary-of-json-examples-for-component-visibility-based-on-fields-value)
 
-[1\. All Conditions Must Be True (AND) 1](#All-Conditions-Must-Be-True-(AND))
+[1\. All Conditions Must Be True (AND) 1](#all-conditions-must-be-true-and)
 
-[2\. At Least One Condition Must Be True (OR) 1](#_Toc172675987)
+[2\. At Least One Condition Must Be True (OR) 1](#at-least-one-condition-must-be-true-or)
 
-[3\. Combination of AND and OR 1](#_Toc172675988)
+[3\. Combination of AND and OR 1](#combination-of-and-and-or)
 
-[4\. Nested Conditions 2](#_Toc172675989)
+[4\. Nested Conditions 2](#nested-conditions)
 
-[5\. More Complex Combination 2](#_Toc172675990)
+[5\. More Complex Combination 2](#more-complex-combination)
 
 # Summary of JSON Examples for Component Visibility Based on Field’s Value
 
