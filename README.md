@@ -1,18 +1,163 @@
-# Salesforce DX Project: Next Steps
+On both component, "Upload Files" button will hide based on Filter criteria set on Component properties.
+Attachment Component:
+![image](https://github.com/user-attachments/assets/e04d9950-cc6e-4316-935a-5d6b6f89a752)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## How Do You Plan to Deploy Your Changes?
+Standalone Upload component:
+![image](https://github.com/user-attachments/assets/6f552b13-c69c-4b4c-8a86-7f1b2d975bea)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Contents
 
-## Configure Your Salesforce DX Project
+[Summary of JSON Examples for Component Visibility Based on Field’s Value 1](#_Toc172675985)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+[1\. All Conditions Must Be True (AND) 1](#_Toc172675986)
 
-## Read All About It
+[2\. At Least One Condition Must Be True (OR) 1](#_Toc172675987)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+[3\. Combination of AND and OR 1](#_Toc172675988)
+
+[4\. Nested Conditions 2](#_Toc172675989)
+
+[5\. More Complex Combination 2](#_Toc172675990)
+
+# Summary of JSON Examples for Component Visibility Based on Field’s Value
+
+## All Conditions Must Be True (AND)
+
+- - Status is New
+    - Priority is High
+    - Allow_Upload_\_c is true
+
+{
+
+"AND": \[
+
+{ "Status": "New" },
+
+{ "Priority": "High" },
+
+{ "Allow_Upload_\_c": "true" }
+
+\]
+
+}
+
+## At Least One Condition Must Be True (OR)
+
+- - Status is New
+    - Priority is High
+    - Allow_Upload_\_c is true
+
+{
+
+"OR": \[
+
+{ "Status": "New" },
+
+{ "Priority": "High" },
+
+{ "Allow_Upload_\_c": "true" }
+
+\]
+
+}
+
+## Combination of AND and OR
+
+- - Status is New
+    - Priority is High OR Allow_Upload_\_c is true
+
+{
+
+"AND": \[
+
+{ "Status": "New" },
+
+{
+
+"OR": \[
+
+{ "Priority": "High" },
+
+{ "Allow_Upload_\_c": "true" }
+
+\]
+
+}
+
+\]
+
+}
+
+## Nested Conditions
+
+- - (Status is New AND Priority is High) OR (Allow_Upload_\_c is true AND Type is Request)
+
+{
+
+"OR": \[
+
+{
+
+"AND": \[
+
+{ "Status": "New" },
+
+{ "Priority": "High" }
+
+\]
+
+},
+
+{
+
+"AND": \[
+
+{ "Allow_Upload_\_c": "true" },
+
+{ "Type": "Request" }
+
+\]
+
+}
+
+\]
+
+}
+
+## More Complex Combination
+
+- - Status is New
+    - Priority is High OR (Allow_Upload_\_c is true AND Type is Request)
+
+{
+
+"OR": \[
+
+{
+
+"AND": \[
+
+{ "Status": "New" },
+
+{ "Priority": "High" }
+
+\]
+
+},
+
+{
+
+"AND": \[
+
+{ "Allow_Upload_\_c": "true" },
+
+{ "Type": "Request" }
+
+\]
+
+}
+
+\]
+
+}
