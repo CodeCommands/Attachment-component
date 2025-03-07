@@ -38,9 +38,9 @@
 
 ## All Conditions Must Be True (AND)
 
-- - Status is New
-    - Priority is High
-    - Allow_Upload_\_c is true
+- Status is New
+- Priority is High
+- Allow_Upload_\_c is true
 ```json
 {
   "AND": [
@@ -61,9 +61,9 @@
 
 ## At Least One Condition Must Be True (OR)
 
-- - Status is New
-    - Priority is High
-    - Allow_Upload_\_c is true
+- Status is New
+- Priority is High
+- Allow_Upload_\_c is true
 ```json
 {
   "OR": [
@@ -84,8 +84,8 @@
 
 ## Combination of AND and OR
 
-- - Status is New
-    - Priority is High OR Allow_Upload_\_c is true
+- Status is New **AND** 
+- Priority is High **OR** Allow_Upload_\_c is true
 ```json
 {
   "AND": [
@@ -110,7 +110,7 @@
 
 ## Nested Conditions
 
-- (Status is New AND Priority is High) OR (Allow_Upload_\_c is true AND Type is Request)
+- (Status is New **AND** Priority is High) **OR** (Allow_Upload_\_c is true **AND** Type is Request)
 ```json
 {
   "OR": [
@@ -142,37 +142,32 @@
 
 ## More Complex Combination
 
-- - Status is New
-    - Priority is High OR (Allow_Upload_\_c is true AND Type is Request)
-
+- (Status is New **AND** Priority is High)
+- **OR**
+- (Allow_Upload_\_c is true **AND** Type is Request)
+```json
 {
-
-"OR": \[
-
-{
-
-"AND": \[
-
-{ "Status": "New" },
-
-{ "Priority": "High" }
-
-\]
-
-},
-
-{
-
-"AND": \[
-
-{ "Allow_Upload_\_c": "true" },
-
-{ "Type": "Request" }
-
-\]
-
+  "OR": [
+    {
+      "AND": [
+        {
+          "Status": "New"
+        },
+        {
+          "Priority": "High"
+        }
+      ]
+    },
+    {
+      "AND": [
+        {
+          "Allow_Upload__c": "true"
+        },
+        {
+          "Type": "Request"
+        }
+      ]
+    }
+  ]
 }
-
-\]
-
-}
+```
