@@ -22,7 +22,7 @@
 
 Contents
 
-[Summary of JSON Examples for Component Visibility Based on Field’s Value 1](#_Toc172675985)
+[Summary of JSON Examples for Component Visibility Based on Field’s Value 1](#Summary-of-JSON-Examples-for-Component-Visibility-Based-on-Field’s-Value)
 
 [1\. All Conditions Must Be True (AND) 1](#_Toc172675986)
 
