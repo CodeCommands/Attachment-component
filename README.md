@@ -41,7 +41,7 @@
 - - Status is New
     - Priority is High
     - Allow_Upload_\_c is true
-
+```json
 {
 
 "AND": \[
@@ -55,6 +55,7 @@
 \]
 
 }
+```
 
 [Back](#Contents)
 
