@@ -32,7 +32,6 @@
 
 [4\. Nested Conditions 2](#nested-conditions)
 
-[5\. More Complex Combination 2](#more-complex-combination)
 
 # Summary of JSON Examples for Component Visibility Based on Field’s Value
 
@@ -139,35 +138,3 @@
 ```
 
 [Back](#Contents)
-
-## More Complex Combination
-
-- (Status is New **AND** Priority is High)
-- **OR**
-- (Allow_Upload_\_c is true **AND** Type is Request)
-```json
-{
-  "OR": [
-    {
-      "AND": [
-        {
-          "Status": "New"
-        },
-        {
-          "Priority": "High"
-        }
-      ]
-    },
-    {
-      "AND": [
-        {
-          "Allow_Upload__c": "true"
-        },
-        {
-          "Type": "Request"
-        }
-      ]
-    }
-  ]
-}
-```
