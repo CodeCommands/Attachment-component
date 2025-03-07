@@ -12,6 +12,11 @@ Standalone Upload component:
 ![image](https://github.com/user-attachments/assets/6f552b13-c69c-4b4c-8a86-7f1b2d975bea)
 
 
+Component property example:
+
+
+![image](https://github.com/user-attachments/assets/2a276514-392f-429c-8ad1-699a195f1262)
+
 
 
 Contents
