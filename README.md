@@ -91,21 +91,21 @@
 
 "AND": [
 
-{ "Status": "New" },
+    { "Status": "New" },
 
-{
+    {
 
-"OR": [
+        "OR": [
 
-{ "Priority": "High" },
+            { "Priority": "High" },
 
-{ "Allow_Upload__c": "true" }
+            { "Allow_Upload__c": "true" }
 
-]
+            ]
 
-}
+    }
 
-]
+    ]
 
 }
 ```
