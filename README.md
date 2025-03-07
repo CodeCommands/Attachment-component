@@ -44,15 +44,15 @@
 ```json
 {
 
-"AND": \[
+"AND": [
 
 { "Status": "New" },
 
 { "Priority": "High" },
 
-{ "Allow_Upload_\_c": "true" }
+{ "Allow_Upload__c": "true" }
 
-\]
+]
 
 }
 ```
