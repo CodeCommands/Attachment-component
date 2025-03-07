@@ -1,10 +1,18 @@
 On both component, "Upload Files" button will hide based on Filter criteria set on Component properties.
+
+
 Attachment Component:
+
 ![image](https://github.com/user-attachments/assets/e04d9950-cc6e-4316-935a-5d6b6f89a752)
 
 
 Standalone Upload component:
+
+
 ![image](https://github.com/user-attachments/assets/6f552b13-c69c-4b4c-8a86-7f1b2d975bea)
+
+
+
 
 Contents
 
