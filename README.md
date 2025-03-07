@@ -20,7 +20,7 @@
 
 
 
-Contents
+## Contents
 
 [Summary of JSON Examples for Component Visibility Based on Field’s Value](#summary-of-json-examples-for-component-visibility-based-on-fields-value)
 
@@ -55,6 +55,7 @@ Contents
 \]
 
 }
+[Back](#Contents)
 
 ## At Least One Condition Must Be True (OR)
 
